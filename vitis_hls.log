@@ -1,0 +1,43 @@
+INFO: [HLS 200-10] Running '/home/tusharu110/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'tusharu110' on host 'tushar-ROG-Strix' (Linux_x86_64 version 5.15.0-41-generic) on Fri May 26 00:25:19 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/tusharu110/fpga_projects/cnnMnsit'
+Sourcing Tcl script '/home/tusharu110/fpga_projects/cnnMnsit/VitisFlow/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source /home/tusharu110/fpga_projects/cnnMnsit/VitisFlow/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project VitisFlow 
+INFO: [HLS 200-10] Opening project '/home/tusharu110/fpga_projects/cnnMnsit/VitisFlow'.
+INFO: [HLS 200-1510] Running: set_top nn 
+INFO: [HLS 200-1510] Running: add_files VitisFlow/nn.cpp 
+INFO: [HLS 200-10] Adding design file 'VitisFlow/nn.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb VitisFlow/test_nn.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'VitisFlow/test_nn.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/tusharu110/fpga_projects/cnnMnsit/VitisFlow/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/tusharu110/fpga_projects/cnnMnsit/VitisFlow
+INFO: [HLS 200-1510] Running: set_part xc7a35tcpg236-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -output /home/tusharu110/fpga_projects/cnnMnsit/VitisFlow 
+INFO: [HLS 200-1510] Running: source ./VitisFlow/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name nn nn 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output /home/tusharu110/fpga_projects/cnnMnsit/VitisFlow 
+Running Dispatch Server on port: 37635
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1299.832 ; gain = 0.023 ; free physical = 146 ; free virtual = 4593
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/tusharu110/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri May 26 00:25:40 2023...
+INFO: [HLS 200-802] Generated output file VitisFlow/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 10.77 seconds. CPU system time: 0.47 seconds. Elapsed time: 13.53 seconds; current allocated memory: 6.754 MB.
+INFO: [HLS 200-112] Total CPU user time: 11.81 seconds. Total CPU system time: 0.56 seconds. Total elapsed time: 24.55 seconds; peak allocated memory: 211.184 MB.
