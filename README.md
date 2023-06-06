@@ -45,11 +45,11 @@ vitis_hls.log        - Vitis Logs
 
 ### Cosimulation
 1. Performance 
-![](https://imgur.com/nYS9wxX.png)
+![Performance](https://imgur.com/nYS9wxX.png)
 2. Waveform
-![](https://imgur.com/uZsTOda.png)
+![Waveform](https://imgur.com/uZsTOda.png)
 > Tested on 100 images with a result of 92% accuracy where total simulation time was 7.948195ms that is an avg of 79.48uS per image.
 
 ### Implementation
 1. IP
-![](https://imgur.com/9lHXlwV.png)
+![IP](https://imgur.com/9lHXlwV.png)
